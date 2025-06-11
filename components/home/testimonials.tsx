@@ -66,7 +66,7 @@ export const Testimonials: React.FC = () => {
           </h2>
           <p className="text-lg text-center text-gray-600 mb-10 max-w-3xl">
             Discover what our valued clients have to say about their experiences
-            with our Prism SFA. We take pride in delivering exceptional results
+            with our SmartSalonBot. We take pride in delivering exceptional results
             and fostering lasting partnerships.
           </p>
         </div>

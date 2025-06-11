@@ -12,8 +12,10 @@ function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <NavLink
-        to={(href || "#")}
-        className={({isActive}) => `font-semibold text-md ${isActive ? 'text-yellow-500' : ''}`}
+        to={href || "#"}
+        className={({ isActive }) =>
+          `font-semibold text-md ${isActive ? "text-yellow-500" : ""}`
+        }
       >
         {children}
       </NavLink>
@@ -81,30 +83,32 @@ export function Navbar() {
           }`}
         >
           <NavItem href="/">Home</NavItem>
-          {/* <NavItem href="/features">Features</NavItem> */}
           <NavItem href="/demo">Demo</NavItem>
           <NavItem href="/contact">Contact Us</NavItem>
         </ul>
 
         <div className="hidden gap-2 lg:flex lg:items-center">
           <a
-            href="https://x.com/"
+            href="https://www.instagram.com/smartsalonbot?utm_source=qr&igsh=MzI4dXpzdzVlczE5"
+            target="_blank"
             className={`text-md ${
               isScrolling ? "text-gray-600" : "text-white"
             }`}
           >
-            <i className="fab fa-twitter text-base" />
+            <i className="fab fa-instagram text-base" />
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.youtube.com/@smartsalonbot-l7o"
+            target="_blank"
             className={`text-md ${
               isScrolling ? "text-gray-600" : "text-white"
             }`}
           >
-            <i className="fab fa-linkedin text-base" />
+            <i className="fab fa-youtube text-base" />
           </a>
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/share/19BjsKic2q/"
+            target="_blank"
             className={`text-md ${
               isScrolling ? "text-gray-600" : "text-white"
             }`}
@@ -114,7 +118,9 @@ export function Navbar() {
           <button
             onClick={handleIsOpen}
             className={`ml-2 rounded-md px-4 py-2 text-md font-medium ${
-              isScrolling ? "bg-gradient-btn text-white" : "bg-white text-gray-800"
+              isScrolling
+                ? "bg-gradient-btn text-white"
+                : "bg-white text-gray-800"
             }`}
           >
             Request Demo

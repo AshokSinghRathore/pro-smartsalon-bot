@@ -22,7 +22,7 @@ export const SmartSalonFeatures: IFeaturesData[] = [
         </p>
         <div className="grid place-items-center gap-4">
           <img
-            src="../../prism-sfa/20.png"
+            src="../../image/13.jpg"
             alt="startup template"
             width={1000}
             height={1000}
@@ -44,7 +44,7 @@ export const SmartSalonFeatures: IFeaturesData[] = [
         </p>
         <div className="grid place-items-center gap-4">
           <img
-            src="../../prism-sfa/20.png"
+            src="../../image/14.jpg"
             alt="startup template"
             width={1000}
             height={1000}
@@ -66,7 +66,7 @@ export const SmartSalonFeatures: IFeaturesData[] = [
         </p>
         <div className="grid place-items-center gap-4">
           <img
-            src="../../prism-sfa/20.png"
+            src="../../image/15.jpg"
             alt="startup template"
             width={1000}
             height={1000}
@@ -88,7 +88,7 @@ export const SmartSalonFeatures: IFeaturesData[] = [
         </p>
         <div className="grid place-items-center gap-4">
           <img
-            src="../../prism-sfa/20.png"
+            src="../../image/13.jpg"
             alt="startup template"
             width={1000}
             height={1000}
@@ -110,7 +110,7 @@ export const SmartSalonFeatures: IFeaturesData[] = [
         </p>
         <div className="grid place-items-center gap-4">
           <img
-            src="../../prism-sfa/20.png"
+            src="../../image/14.jpg"
             alt="startup template"
             width={1000}
             height={1000}
@@ -132,7 +132,7 @@ export const SmartSalonFeatures: IFeaturesData[] = [
         </p>
         <div className="grid place-items-center gap-4">
           <img
-            src="../../prism-sfa/20.png"
+            src="../../image/15.jpg"
             alt="startup template"
             width={1000}
             height={1000}
@@ -154,7 +154,7 @@ export const SmartSalonFeatures: IFeaturesData[] = [
         </p>
         <div className="grid place-items-center gap-4">
           <img
-            src="../../prism-sfa/20.png"
+            src="../../image/13.jpg"
             alt="startup template"
             width={1000}
             height={1000}
@@ -176,7 +176,7 @@ export const SmartSalonFeatures: IFeaturesData[] = [
         </p>
         <div className="grid place-items-center gap-4">
           <img
-            src="../../prism-sfa/20.png"
+            src="../../image/14.jpg"
             alt="startup template"
             width={1000}
             height={1000}

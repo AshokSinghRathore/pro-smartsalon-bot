@@ -15,12 +15,12 @@ export const VideoIntro: React.FC = () => {
           alt="Video Background"
         />
         <div className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 z-10">
-          <button className="text-white bg-transparent rounded-full p-4">
+          <a href="https://youtube.com/shorts/ImH8RHN3828?si=iDVuMXLAV9JoHc8-" target="_blank" className="text-white bg-transparent rounded-full p-4">
             <FontAwesomeIcon
               icon={faPlay}
               className="h-6 w-6 bg-red-600 py-4 px-3 rounded-full"
             />
-          </button>
+          </a>
         </div>
       </div>
       <div className="flex-col-center lg:px-8">

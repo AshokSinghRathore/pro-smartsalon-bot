@@ -7,9 +7,11 @@ const Hero: React.FC = () => {
   return (
     <div className="relative min-h-screen w-full">
       <header className="grid !min-h-[49rem] bg-gradient px-8">
-        
-        <div className="container mx-auto grid h-full w-full lg:max-w-7xl grid-cols-1 mt-32 lg:mt-14 lg:grid-cols-2">
-          <div className="col-span-1 grid place-content-start my-auto">
+        <div className="mx-auto grid h-full w-full lg:max-w-7xl grid-cols-1 mt-32 lg:mt-14 lg:grid-cols-2">
+          <div className="col-span-1 grid place-content-start my-auto lg:mt-20">
+            <h1 className="text-4xl font-bold text-white mb-20">
+              Increase your profit by 25 to 30 percent in just two months
+            </h1>
             <h1 className="text-4xl font-bold text-white mb-4">
               Your Perfect <br /> Salon{" "}
               <span className="text-yellow-500">Automation</span> &{" "}

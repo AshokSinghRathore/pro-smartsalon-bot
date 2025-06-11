@@ -91,14 +91,14 @@ export const Footer = () => {
           <div className="flex gap-2">
             {/* Social Icons */}
             {[
-              { icon: "fa-twitter", link: "https://x.com/" },
+              { icon: "fa-instagram", link: "https://www.instagram.com/smartsalonbot?utm_source=qr&igsh=MzI4dXpzdzVlczE5" },
               {
-                icon: "fa-linkedin",
-                link: "https://www.linkedin.com/",
+                icon: "fa-youtube",
+                link: "https://www.youtube.com/@smartsalonbot-l7o",
               },
               {
                 icon: "fa-facebook",
-                link: "https://www.facebook.com/",
+                link: "https://www.facebook.com/share/19BjsKic2q/",
               },
             ].map((social) => (
               <a

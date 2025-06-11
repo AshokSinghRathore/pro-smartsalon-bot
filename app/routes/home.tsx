@@ -2,9 +2,8 @@ import { Navbar } from "components/common/navbar";
 import type { Route } from "./+types/home";
 import Hero from "components/home/hero";
 import VideoIntro from "components/home/video-intro";
-import MobileConvenience from "components/home/mobile-convenience";
 import Testimonials from "components/home/testimonials";
-import { Faqs, Feature } from "components/home";
+import { Faqs } from "components/home";
 import { Footer } from "components/common/footer";
 import ContactForm from "components/contact/contactForm";
 import WhoWeAre from "components/home/who-we-are";
@@ -32,7 +31,6 @@ export default function Home() {
       <VideoIntro />
       <WhoWeAre />
       <BasicFeatures />
-      {/* <MobileConvenience /> */}
       <ContactForm />
       <Testimonials />
       <Faqs />

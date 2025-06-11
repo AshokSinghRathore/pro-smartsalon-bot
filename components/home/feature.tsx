@@ -58,7 +58,7 @@ export const Feature: React.FC = () => {
   return (
     <section className="py-28 px-4 w-full lg:max-w-7xl mx-auto">
       <div className="container mx-auto mb-20 text-center">
-        <h3 className="text-lg font-bold text-blue-600 uppercase mb-2">
+        <h3 className="text-lg font-bold text-cyan-600 uppercase mb-2">
           Empowering Sales, On Every Screen
         </h3>
         <h1 className="text-4xl font-semibold text-gray-800 mb-4">

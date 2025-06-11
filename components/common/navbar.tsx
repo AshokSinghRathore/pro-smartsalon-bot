@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import Modal from "./modal";
 
 interface NavItemProps {
@@ -11,12 +11,12 @@ function NavItem({ children, href }: NavItemProps) {
   const navigate = useNavigate();
   return (
     <li>
-      <button
-        onClick={() => navigate(href || "#")}
-        className="font-medium text-sm"
+      <NavLink
+        to={(href || "#")}
+        className={({isActive}) => `font-semibold text-md ${isActive ? 'text-yellow-500' : ''}`}
       >
         {children}
-      </button>
+      </NavLink>
     </li>
   );
 }
@@ -69,14 +69,10 @@ export function Navbar() {
         >
           <img
             alt="logo"
-            src={
-              isScrolling
-                ? "../image/prism-logo-light.png"
-                : "../image/prism-logo-dark.png"
-            }
+            src={"../image/smartsalonbot-logo.jpg"}
             className="h-6 w-6"
           />
-          Prism SFA
+          SmartSalonBot
         </button>
 
         <ul
@@ -85,31 +81,31 @@ export function Navbar() {
           }`}
         >
           <NavItem href="/">Home</NavItem>
-          <NavItem href="/features">Features</NavItem>
+          {/* <NavItem href="/features">Features</NavItem> */}
           <NavItem href="/demo">Demo</NavItem>
           <NavItem href="/contact">Contact Us</NavItem>
         </ul>
 
         <div className="hidden gap-2 lg:flex lg:items-center">
           <a
-            href="https://x.com/Code_Aspire"
-            className={`text-sm ${
+            href="https://x.com/"
+            className={`text-md ${
               isScrolling ? "text-gray-600" : "text-white"
             }`}
           >
             <i className="fab fa-twitter text-base" />
           </a>
           <a
-            href="https://www.linkedin.com/company/codeaspire-consultancy-services/"
-            className={`text-sm ${
+            href="https://www.linkedin.com/"
+            className={`text-md ${
               isScrolling ? "text-gray-600" : "text-white"
             }`}
           >
             <i className="fab fa-linkedin text-base" />
           </a>
           <a
-            href="https://www.facebook.com/people/CodeAspire-Consultancy-Services/100070215794236/?mibextid=LQQJ4d"
-            className={`text-sm ${
+            href="https://www.facebook.com/"
+            className={`text-md ${
               isScrolling ? "text-gray-600" : "text-white"
             }`}
           >
@@ -117,8 +113,8 @@ export function Navbar() {
           </a>
           <button
             onClick={handleIsOpen}
-            className={`ml-2 rounded-md px-4 py-2 text-sm font-medium ${
-              isScrolling ? "bg-gradient text-white" : "bg-white text-gray-800"
+            className={`ml-2 rounded-md px-4 py-2 text-md font-medium ${
+              isScrolling ? "bg-gradient-btn text-white" : "bg-white text-gray-800"
             }`}
           >
             Request Demo
@@ -145,7 +141,7 @@ export function Navbar() {
         <div className="container mx-auto mt-4 rounded-lg border-t border-gray-200 bg-white px-6 py-5 lg:hidden transition-all duration-1000 ease-in">
           <ul className="flex flex-col gap-4 text-gray-800">
             <NavItem href="/">Home</NavItem>
-            <NavItem href="/features">Features</NavItem>
+            {/* <NavItem href="/features">Features</NavItem> */}
             <NavItem href="/demo">Demo</NavItem>
             <NavItem href="/contact">Contact Us</NavItem>
           </ul>

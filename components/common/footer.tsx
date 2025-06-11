@@ -2,7 +2,7 @@ import { useNavigate } from "react-router";
 
 const LINKS = [
   { label: "Home", href: "/" },
-  { label: "Features", href: "/features" },
+  // { label: "Features", href: "/features" },
   { label: "Demo", href: "/demo" },
   { label: "Contact Us", href: "/contact" },
   { lebel: "Pricing", href: "/pricing" },
@@ -24,16 +24,13 @@ export const Footer = () => {
             >
               <img
                 alt="logo"
-                src={"../image/prism-logo-dark.png"}
-                className="h-6 w-6"
+                src={"../image/smartsalonbot-logo.jpg"}
+                className="h-26 w-26"
               />
-              Prism SFA
+              {/* SmartSalonBot */}
             </button>
             <p className="mb-12 font-normal text-white sm:max-w-4xl">
-              Prism SFA enhances every stage of the sales process, making it
-              easier to manage the daily tasks of sales and field teams,
-              automate follow-ups, track performance, and make data-driven
-              decisions.
+              Smart Salon Bot is a revolutionary Salon Management software designed to simplify the operations of your salon.
             </p>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               {LINKS.map((link, idx) => (
@@ -54,32 +51,22 @@ export const Footer = () => {
           {/* Right Side */}
           <div className="mt-8 w-full md:mt-0 md:w-auto">
             <h6 className="mb-3 text-lg font-semibold text-white">
-              Get the app
+              Let Connect
             </h6>
             <div className="flex flex-col gap-2">
               <a
-                href={"https://apps.apple.com/in/app/prism-sfa/id6621264017"}
+                href={"/contact"}
                 className="flex items-center justify-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium shadow-md transition hover:shadow-lg"
               >
-                <img
-                  src="../logos/logo-apple.png"
-                  alt="ios"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                />
-                App Store
+                Contact
               </a>
               <a
                 href={
-                  "https://play.google.com/store/apps/details?id=com.prismsfa.codeaspire"
+                  "/demo"
                 }
-                className="flex items-center justify-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium shadow-md transition hover:shadow-lg"
+                className=" flex items-center justify-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium shadow-md transition hover:shadow-lg"
               >
-                <img
-                  src="../logos/logo-google.png"
-                  alt="android"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                />
-                Google Play
+                Request Demo
               </a>
             </div>
           </div>
@@ -104,14 +91,14 @@ export const Footer = () => {
           <div className="flex gap-2">
             {/* Social Icons */}
             {[
-              { icon: "fa-twitter", link: "https://x.com/Code_Aspire" },
+              { icon: "fa-twitter", link: "https://x.com/" },
               {
                 icon: "fa-linkedin",
-                link: "https://www.linkedin.com/company/codeaspire-consultancy-services/",
+                link: "https://www.linkedin.com/",
               },
               {
                 icon: "fa-facebook",
-                link: "https://www.facebook.com/people/CodeAspire-Consultancy-Services/100070215794236/?mibextid=LQQJ4d",
+                link: "https://www.facebook.com/",
               },
             ].map((social) => (
               <a

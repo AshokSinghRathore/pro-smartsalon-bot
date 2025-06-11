@@ -1,8 +1,4 @@
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "motion/react";
+import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -32,14 +28,17 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div className="w-full font-sans md:px-10" ref={containerRef}>
-      <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
-        <h2 className="mb-4 max-w-4xl font-bold text-lg text-black md:text-4xl">
-          Features Of Prism SFA
-        </h2>
-        <p className="text-neutral-700 text-sm md:text-base">
-          Prism SFA provides all Industry with the tools to stay
-          ahead of the curve by automating routine tasks and optimizing sales
-          strategies.
+      <div className="grid place-content-center place-items-center mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
+        <h3 className="text-lg font-bold text-cyan-600 uppercase mb-2">
+          Features
+        </h3>
+        <h1 className="text-4xl font-semibold text-gray-800 mb-4">
+          Features Of Smart Salon Bot
+        </h1>
+        <p className="text-neutral-700 text-sm md:text-base text-center">
+          SmartSalonBot empowers your salon with the mordern tech to stay ahead
+          of the curve by automating routine tasks and optimizing salon
+          management strategies.
         </p>
       </div>
 

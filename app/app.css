@@ -11,10 +11,17 @@ body {
 
 @layer utilities {
   .bg-gradient {
-    @apply bg-gradient-to-bl from-gray-700 to-blue-900 via-black;
+    /* @apply bg-purple-700 ; */
+    @apply bg-gradient-to-br via-purple-700 to-cyan-500 from-yellow-500 ;
   }
   .bg-gradient-btn {
-    @apply bg-gradient-to-bl to-blue-900 from-black px-3 py-2 text-white rounded-lg;
+    @apply  bg-yellow-400  px-3 py-2 text-black rounded-lg;
+  }
+  .flex-center {
+    @apply flex justify-center items-center
+  }
+  .flex-col-center {
+    @apply flex flex-col justify-center items-center
   }
 }
 

@@ -1,31 +1,38 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import React from "react";
+import { useNavigate } from "react-router";
 
 export const ContactForm: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section className="py-28 px-4 w-full lg:max-w-7xl mx-auto">
         <div className="container mx-auto mb-20 text-center">
-          <h3 className="text-lg font-bold text-blue-600 uppercase mb-2">
-            Contact us form
+          <h3 className="text-lg font-bold text-cyan-600 uppercase mb-2">
+            Let's Connect
           </h3>
           <p className="text-lg text-gray-500 mx-auto w-full px-4 lg:w-11/12 lg:px-8">
-            Kindly fill all the required fields and we will connecting with you
+            We'll help you to transform your salon into Smart Salon just fill all the required fields and we will connect with you
             soon
           </p>
         </div>
         <div className="w-full grid lg:grid-cols-2">
           <div className="grid place-items-center mb-20">
-            <div className="container mx-auto text-center">
-              <div className="text-xl font-bold text-cyan-900 uppercase mb-2">
-                <span className="text-blue-800">Code</span>
-                <span className="text-orange-600">Aspire</span>
-                <span className="text-blue-800 mx-1">|</span>
-                <span className="text-orange-600">{`</>`}</span>
-              </div>
+            <div className="container mx-auto text-center grid gap-4">
+              <button
+                onClick={() => navigate("/")}
+                className={`text-lg flex gap-2 items-center justify-center font-bold "text-white"}`}
+              >
+                <img
+                  alt="logo"
+                  src={"../image/smartsalonbot-logo.jpg"}
+                  className="h-28 w-28"
+                />
+              </button>
               <p className="text-lg text-gray-500 mx-auto w-full px-4 lg:w-11/12 lg:px-8">
-              Transforming visions into reality, our company specializes in delivering exceptional IT services.
+                Smart Salon Bot is a revolutionary Salon Management software
+                designed to simplify the operations of your salon.
               </p>
             </div>
             <div className="container mx-auto text-center">
@@ -33,7 +40,7 @@ export const ContactForm: React.FC = () => {
                 Email
               </h3>
               <p className="text-lg text-gray-500 mx-auto w-full px-4 lg:w-11/12 lg:px-8">
-              info@code-aspire.com 
+                info@smartsalonbot.com
               </p>
             </div>
             <div className="container mx-auto text-center">
@@ -41,7 +48,7 @@ export const ContactForm: React.FC = () => {
                 Contact
               </h3>
               <p className="text-lg text-gray-500 mx-auto w-full px-4 lg:w-11/12 lg:px-8">
-              +91-933 616 6483
+                +91-933 616 6483
               </p>
             </div>
           </div>
@@ -85,7 +92,7 @@ export const Form = () => {
     <>
       <div className="relative container mx-auto max-w-6xl p-4">
         {/* Gradient shadow */}
-        <div className="absolute -inset-1 rounded-md blur-xl opacity-50 bg-gradient-to-br from-blue-300 via-white to-blue-200"></div>
+        <div className="absolute -inset-1 rounded-md blur-xl opacity-50 bg-gradient-to-br from-cyan-300 via-white to-yellow-200"></div>
 
         <form
           onSubmit={formik.handleSubmit}

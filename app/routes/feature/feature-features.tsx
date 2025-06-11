@@ -1,6 +1,6 @@
 import { Footer, Navbar } from "components/common";
 import Banner from "components/common/banner";
-import { BasicFeatures } from "components/features/BasicFeature";
+import { BasicFeatures } from "components/home/BasicFeature";
 import type { Route } from "../+types/home";
 
 export function meta({}: Route.MetaArgs) {

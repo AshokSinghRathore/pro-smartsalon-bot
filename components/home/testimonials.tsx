@@ -32,24 +32,24 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 const TESTIMONIALS = [
   {
     feedback:
-      "Prism SFA has completely revolutionized the way we manage our sales process. The automation tools have saved us a lot of time, and the real-time analytics help us act quickly. It's a brilliant platform!",
-    client: "Riya Sharma",
-    title: "Sales Head",
-    img: "https://img.freepik.com/free-photo/medium-shot-woman-working-as-lawyer_23-2151053997.jpg?ga=GA1.1.1267587208.1687781140&semt=ais_items_boosted&w=740",
+      "SmartSalonBot has transformed how we manage appointments and customer records. The automation tools and reminders help reduce no-shows, and it's incredibly easy to use for our team.",
+    client: "Ritika Verma",
+    title: "Salon Owner, Blush & Glow",
+    img: "https://img.freepik.com/free-photo/portrait-young-beautiful-woman-salon_144627-30826.jpg?w=740",
   },
   {
     feedback:
-      "Thanks to Prism SFA, our sales team now has full clarity on leads and follow-ups. The mobile app is incredibly convenient for field updates. Their support team is prompt and understands Indian business needs.",
-    client: "Amit Rajan",
-    title: "Regional Sales Manager",
-    img: "https://img.freepik.com/free-photo/business-man-mobile-phone_23-2148018677.jpg?ga=GA1.1.1267587208.1687781140&semt=ais_items_boosted&w=740",
+      "As a stylist, SmartSalonBot lets me focus more on my clients and less on admin work. The mobile updates and real-time schedule access are game-changers for salon professionals.",
+    client: "Arjun Mehta",
+    title: "Senior Stylist",
+    img: "https://img.freepik.com/free-photo/portrait-handsome-hairdresser_144627-26751.jpg?w=740",
   },
   {
     feedback:
-      "Adopting Prism SFA has been a game-changer for us. It's user-friendly, efficient, and has noticeably improved our conversion rates. Perfect fit for the Indian sales ecosystem!",
-    client: "Priya Menon",
-    title: "VP Sales",
-    img: "https://img.freepik.com/free-photo/successful-businesswoman_23-2147704446.jpg?ga=GA1.1.1267587208.1687781140&semt=ais_items_boosted&w=740",
+      "Since implementing SmartSalonBot, we've seen smoother operations, better team coordination, and improved customer satisfaction. It's tailor-made for Indian salon businesses.",
+    client: "Neha Kapoor",
+    title: "Manager, StyleHub Salon",
+    img: "https://img.freepik.com/free-photo/beauty-portrait-young-woman-with-natural-makeup_144627-22273.jpg?w=740",
   },
 ];
 

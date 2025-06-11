@@ -7,12 +7,14 @@ import Testimonials from "components/home/testimonials";
 import { Faqs, Feature } from "components/home";
 import { Footer } from "components/common/footer";
 import ContactForm from "components/contact/contactForm";
+import WhoWeAre from "components/home/who-we-are";
+import { BasicFeatures } from "components/home/BasicFeature";
 
 export function meta({}: Route.MetaArgs) {
   return [
     {
       title:
-        "Prism SFA - Field Force Management & Pharma Sales Automation Software",
+        "SmartSalonBot - Salon Automation & Management Automation Software",
     },
     {
       name: "description",
@@ -28,11 +30,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <VideoIntro />
-      <Feature />
-      <MobileConvenience />
+      <WhoWeAre />
+      <BasicFeatures />
+      {/* <MobileConvenience /> */}
+      <ContactForm />
       <Testimonials />
       <Faqs />
-      <ContactForm />
       <Footer />
     </>
   );

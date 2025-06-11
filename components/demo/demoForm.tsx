@@ -7,8 +7,8 @@ import { VideoIntro } from "components/home";
 export const DemoForm: React.FC = () => {
   return (
     <section className="py-28 px-4 w-full lg:max-w-7xl mx-auto">
-      <div className="container mx-auto text-center">
-        <h3 className="text-lg font-bold text-blue-600 uppercase mb-2">
+      <div className="container mx-auto text-center mb-8">
+        <h3 className="text-lg font-bold text-cyan-600 uppercase mb-2">
           Demo Request Form
         </h3>
         <p className="text-lg text-gray-500 mx-auto w-full px-4 lg:w-11/12 lg:px-8">
@@ -18,18 +18,19 @@ export const DemoForm: React.FC = () => {
       <div className="w-full grid lg:grid-cols-2">
         <div className="lg:grid-cols-1 flex justify-center items-center m-2">
           <div className="container mx-auto mb-20 text-center">
-            <VideoIntro />
-            <h3 className="text-lg font-bold text-blue-600 uppercase mb-2">
-              Experience Prism SFA in Action — Automate, Accelerate & Empower
-              Your Sales Team
+            <h3 className="text-lg font-bold text-cyan-600 uppercase mb-2 lg:px-8">
+              Experience SmartSalonBot in Action — Automate, Elevate & Grow Your
+              Salon Business
             </h3>
             <p className="text-lg text-gray-500 mx-auto w-full px-4 lg:w-11/12 lg:px-8">
-              Discover how Prism SFA can revolutionize your sales process. From
-              real-time Reports to intelligent sales management, our Sales Force
-              Automation platform gives your team the tools they need to perform
-              at their best. Schedule a personalized demo today and see how
-              Prism SFA helps you close more deals, streamline operations, and
-              gain valuable insights — all from a single powerful dashboard.
+              Discover how SmartSalonBot can revolutionize your salon's
+              operations. From seamless online bookings and staff management to
+              intelligent inventory tracking and client relationship management,
+              our salon automation platform gives you the tools you need to
+              perform at your best. Schedule a personalized demo today and see
+              how SmartSalonBot helps you delight more clients, streamline
+              operations, and gain valuable insights — all from a single
+              powerful dashboard.
             </p>
           </div>
         </div>
@@ -63,13 +64,15 @@ export const Form = ({ handleIsOpen }: { handleIsOpen?: () => void }) => {
     validationSchema: Yup.object({
       firstName: Yup.string().required("First name is required"),
       lastName: Yup.string().required("Last name is required"),
-      numberOfEmployees: Yup.string().required("Number Of Employees is required"),
+      numberOfEmployees: Yup.string().required(
+        "Number Of Employees is required"
+      ),
       email: Yup.string()
         .email("Invalid email address")
         .required("Email is required"),
     }),
     onSubmit: (values) => {
-      console.log("Submitted values:", {...values, date});
+      console.log("Submitted values:", { ...values, date });
       setShowCalander(false);
       if (handleIsOpen) handleIsOpen();
     },
@@ -176,7 +179,6 @@ export const Form = ({ handleIsOpen }: { handleIsOpen?: () => void }) => {
             )}
           </div>
 
-
           <div>
             <span className="text-sm font-medium text-gray-700 px-1">
               Number of Employees <span className="text-red-600">*</span>
@@ -190,7 +192,8 @@ export const Form = ({ handleIsOpen }: { handleIsOpen?: () => void }) => {
               onBlur={formik.handleBlur}
               value={formik.values.numberOfEmployees}
             />
-            {formik.touched.numberOfEmployees && formik.errors.numberOfEmployees ? (
+            {formik.touched.numberOfEmployees &&
+            formik.errors.numberOfEmployees ? (
               <p className={errorClass}>{formik.errors.numberOfEmployees}</p>
             ) : (
               <p className="text-xs text-gray-500 mt-1">Required</p>

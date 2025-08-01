@@ -36,9 +36,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Features Of Smart Salon Bot
         </h1>
         <p className="text-neutral-700 text-sm md:text-base text-center">
-          SmartSalonBot empowers your salon with the mordern tech to stay ahead
-          of the curve by automating routine tasks and optimizing salon
-          management strategies.
+          Smart Salon Bot helps you stay ahead by automating routine tasks and
+          optimizing salon management.
         </p>
       </div>
 

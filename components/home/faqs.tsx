@@ -39,7 +39,7 @@ export const Faqs: React.FC = () => {
       <div className="container max-w-6xl mx-auto">
         <div className="text-center">
           <h1 className="text-4xl font-semibold mb-4 text-gray-800">
-            Frequently Asked Questions
+            Find quick answers to common questions about features, setup, support, and more.
           </h1>
           <p className="text-lg text-gray-500 mx-auto mb-24 lg:w-3/5">
             A lot of people don&apos;t appreciate the moment until it&apos;s

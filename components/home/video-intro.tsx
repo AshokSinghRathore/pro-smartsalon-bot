@@ -4,8 +4,12 @@ import React from "react";
 
 export const VideoIntro: React.FC = () => {
   return (
+    <div className="p-8">
+      <h3 className="text-lg font-bold text-cyan-600 uppercase mb-2 text-center">
+        Empowering Salons, On Every Step
+      </h3>
     <div className="p-8 grid lg:grid-cols-2 gap-4">
-      <div className="w-full lg:max-w-7xl container px-5 overflow-hidden rounded-xl relative mx-auto mt-20 max-w-6xl">
+      <div className="w-full lg:max-w-7xl container px-5 overflow-hidden rounded-xl relative mx-auto mt-10 max-w-6xl">
         <div className="bg-black/25 z-10 absolute w-full h-full inset-0 rounded-xl" />
         <img
           width={768}
@@ -28,7 +32,6 @@ export const VideoIntro: React.FC = () => {
         </div>
       </div>
       <div className="flex-col-center lg:px-8">
-        <div className="flex flex-col items-center justify-center lg:px-8"></div>
         <h1 className="text-4xl font-semibold text-gray-800 mb-4">
           Experience the power of Salon Automaton
         </h1>
@@ -39,6 +42,7 @@ export const VideoIntro: React.FC = () => {
           experiences.
         </p>
       </div>
+    </div>
     </div>
   );
 };
